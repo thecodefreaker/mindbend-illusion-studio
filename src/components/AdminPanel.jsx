@@ -44,7 +44,7 @@ export const AdminPanel = ({ isOpen, onClose }) => {
   const [instantIllusion, setInstantIllusion] = useState('dancer');
   const [instantHook, setInstantHook] = useState("Reverse this spin in your mind 🧠");
   const [instantSub, setInstantSub] = useState("Are you seeing clockwise or counter-clockwise? Comment below! 👇");
-  const [instantDuration, setInstantDuration] = useState(10);
+  const [instantDuration, setInstantDuration] = useState(20); // 20s minimum
   const [isPostingNow, setIsPostingNow] = useState(false);
   const [postProgressStep, setPostProgressStep] = useState(0);
   const [postProgressMessage, setPostProgressMessage] = useState('');

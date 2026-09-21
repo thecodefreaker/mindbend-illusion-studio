@@ -8,7 +8,7 @@ import { videoRecorder } from '../utils/videoRecorder';
 
 export const VideoStudioModal = ({ isOpen, onClose, currentIllusion }) => {
   const [aspectRatio, setAspectRatio] = useState('9:16');
-  const [duration, setDuration] = useState(12);
+  const [duration, setDuration] = useState(20); // 20s minimum
   const [fps, setFps] = useState(60);
   const [includeAudio, setIncludeAudio] = useState(true);
   
@@ -392,11 +392,13 @@ export const VideoStudioModal = ({ isOpen, onClose, currentIllusion }) => {
                 {/* Duration */}
                 <div className="p-3 bg-lab-850 border border-lab-750 rounded-xl">
                   <div className="flex justify-between text-xs mb-1.5">
-                    <span className="text-slate-300 font-medium">Reel Duration</span>
+                    <span className="text-slate-300 font-medium">
+                      Reel Duration <span className="text-[10px] text-amber-400 font-normal">(Min 20s)</span>
+                    </span>
                     <span className="text-neon-cyan font-mono font-bold">{duration}s</span>
                   </div>
                   <div className="flex gap-1.5">
-                    {[8, 10, 12, 16].map(sec => (
+                    {[20, 25, 30, 45].map(sec => (
                       <button
                         key={sec}
                         type="button"

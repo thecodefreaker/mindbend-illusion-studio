@@ -265,7 +265,7 @@ export class Scheduler {
         console.log(`[Scheduler] [1/4] Rendering fresh 60FPS video for ${illusionId}...`);
         renderResult = await renderWorker.renderIllusionReel({
           illusionId,
-          duration: options.duration || 10,
+          duration: options.duration || 20,
           hookText,
           subText,
           revealText,

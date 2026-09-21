@@ -18,7 +18,7 @@ export class RenderWorker {
   // Render video from illusion canvas
   async renderIllusionReel({
     illusionId = 'dancer',
-    duration = 10,
+    duration = 20,
     hookText = 'Reverse this spin in your mind 🧠',
     subText = 'Focus on the center: snap the direction!',
     enableTruthReveal = true,

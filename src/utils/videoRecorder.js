@@ -30,7 +30,7 @@ export class VideoRecorder {
   async recordIllusion({
     drawFrame, // (ctx, width, height, timeElapsed, totalDuration, options) => void
     aspectRatio = '9:16', // '9:16' | '1:1' | '16:9'
-    duration = 10, // seconds
+    duration = 20, // seconds (min 20s)
     fps = 60,
     includeAudio = true,
     overlayText = "Reverse this spin in your mind 🧠",
