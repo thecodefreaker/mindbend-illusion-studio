@@ -738,9 +738,9 @@ export const AdminPanel = ({ isOpen, onClose }) => {
                               </label>
                               <input
                                 type="text"
-                                value={cookieTargetUser || directSession.activeAccount || 'zodi.acillus'}
+                                value={cookieTargetUser || directSession.activeAccount || ''}
                                 onChange={(e) => setCookieTargetUser(e.target.value)}
-                                placeholder="e.g. zodi.acillus"
+                                placeholder="e.g. your_instagram_handle"
                                 className="w-full px-3.5 py-2.5 rounded-xl bg-lab-800 border border-lab-700 text-xs text-white focus:outline-none focus:border-neon-cyan font-mono"
                               />
                             </div>
@@ -791,7 +791,7 @@ export const AdminPanel = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-3 pt-1">
                             <button
                               type="button"
-                              onClick={() => handleImportCookie(cookieTargetUser || directSession.activeAccount || 'zodi.acillus')}
+                              onClick={() => handleImportCookie(cookieTargetUser || directSession.activeAccount || 'account')}
                               disabled={isImportingCookie || !cookieInput.trim()}
                               className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-emerald-500/20 hover:brightness-110 disabled:opacity-50 transition-all"
                             >
@@ -826,7 +826,7 @@ export const AdminPanel = ({ isOpen, onClose }) => {
                                 type="text"
                                 value={directUsername}
                                 onChange={(e) => setDirectUsername(e.target.value)}
-                                placeholder="e.g. zodi.acillus"
+                                placeholder="e.g. your_instagram_handle"
                                 className="w-full px-3.5 py-2.5 rounded-xl bg-lab-800 border border-lab-700 text-xs text-white focus:outline-none focus:border-neon-cyan"
                               />
                             </div>
