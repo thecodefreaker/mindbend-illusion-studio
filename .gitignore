@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Production Build
+dist/
+dist-ssr/
+*.local
+
+# SENSITIVE CREDENTIALS & SESSIONS (Never push to GitHub)
+instagram_profile/
+instagram_profiles/
+backend/instagram_accounts.json
+backend/posting_logs.json
+backend/scheduler_config.json
+*.session
+*.cookie
+.env
+.env.*
+
+# Rendered Media (Avoid bloating git with large video files)
+rendered_reels/
+*.mp4
+*.webm
+*.mov
+
+# Temporary debug screenshots & logs
+*.log
+crop_*.png
+step_*.png
+inspect_*.png
+share_done.png
+profile_verified.png
+backend/*.png
+test_*.png
+.system_generated/
+.kilocode/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
